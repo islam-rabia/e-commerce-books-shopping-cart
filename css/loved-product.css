@@ -1,0 +1,48 @@
+#loved-cart {
+  margin-top: 115px;
+  margin-bottom: 80px;
+  padding-inline: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin-inline: auto;
+
+  h1 {
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 400;
+    color: var(--color-h1);
+  }
+}
+
+#section-cart {
+  .title-product {
+    border-bottom: 1px solid var(--main-border);
+
+    h3 {
+      font-size: 16px;
+      font-family: system-ui;
+      font-weight: 400;
+      padding-bottom: 10px;
+      color: var(--color-h1);
+    }
+  }
+}
+
+#featured-books {
+  margin-block: 15px;
+}
+
+.remove-icon {
+  ion-icon {
+    color: red !important;
+  }
+}
+
+.message {
+  li {
+    width: fit-content;
+    display: flex;
+    gap: 5px;
+  }
+}

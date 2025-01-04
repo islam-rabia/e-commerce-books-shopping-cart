@@ -1,0 +1,170 @@
+@use "./mixins-variable" as *;
+@use "./mixin-media" as *;
+
+#section-discount {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-inline: 20px;
+  margin-block: 133px;
+  justify-content: center;
+
+  .discount-image {
+    display: flex;
+    justify-content: center;
+
+    figure {
+      max-width: 300px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 43%;
+        height: 100%;
+      }
+
+      .img-one {
+        transform: rotate(-17deg);
+      }
+
+      .img-two {
+        transform: rotate(20deg);
+      }
+    }
+  }
+
+  .discount-title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--color-h1);
+    }
+
+    p {
+      font-size: 13px;
+      font-family: Arial;
+      font-weight: 100;
+      line-height: 22px;
+      color: var(--color-p);
+    }
+
+    button {
+      border: hidden;
+      background-color: transparent;
+      background-color: #4960d4;
+      color: white;
+      width: 114px;
+      height: 37px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+
+      &:active {
+        transform: scale(0.95);
+        background-color: #4f66dc;
+      }
+    }
+  }
+}
+
+@include parent(medium) {
+  body {
+    #section-discount {
+      @include productFour();
+    }
+  }
+}
+
+@include parent(XMedium) {
+  body {
+    #section-discount {
+      @include productFive();
+
+      .discount-image {
+        figure {
+          max-width: 348px;
+        }
+      }
+    }
+  }
+}
+
+@include parent(mobile) {
+  body {
+    #section-discount {
+      @include productSex();
+      flex-direction: row;
+      align-items: center;
+
+      .discount-image {
+        figure {
+          max-width: 690px;
+
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include parent(tablet) {
+  body {
+    #section-discount {
+      @include productSeven();
+      gap: 67px;
+    }
+  }
+}
+
+@include parent(lap) {
+  body {
+    #section-discount {
+      @include productOne();
+      gap: 111px;
+
+      .discount-image {
+        figure {
+          max-width: 328px;
+        }
+      }
+
+      .discount-title {
+        max-width: 393px;
+      }
+    }
+  }
+}
+
+@include parent(laptop) {
+  body {
+    #section-discount {
+      @include productTwo();
+      gap: 218px;
+
+      .discount-title {
+        max-width: 452px;
+      }
+
+      .discount-image {
+        figure {
+          max-width: 381px;
+        }
+      }
+    }
+  }
+}
+
+@include parent(large) {
+  body {
+    #section-discount {
+      padding-inline: 150px;
+      max-width: 1400px;
+      margin-inline: auto;
+    }
+  }
+}

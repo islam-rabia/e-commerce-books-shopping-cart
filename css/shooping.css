@@ -1,0 +1,17 @@
+.message {
+  li {
+    width: 149px;
+
+    ion-icon {
+      background-color: red;
+    }
+  }
+}
+
+#section-cart {
+  .title-cart {
+    h3 {
+      color: var(--color-h1);
+    }
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./sign.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>E-Book</h1>
+          <ion-icon name="book-outline"></ion-icon>
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <div class="person">
+          <a href="signIn.html" class="signIn">
+            <button class="icon-person">
+              <ion-icon name="person-outline"></ion-icon>
+              <p>Sign In</p>
+            </button>
+          </a>
+
+          <a href="signUp.html" class="signUp">
+            <button class="icon-person">
+              <ion-icon name="person-outline"></ion-icon>
+              <p>Sign Up</p>
+            </button>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-two">
+      <div class="login-div">
+        <div class="container">
+          <div class="formsInt">
+            <form action="" class="formOne">
+              <div class="form">
+                <h1>Sign In</h1>
+
+                <div class="Email">
+                  <label>Email</label>
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="Write your email"
+                      name="email"
+                    />
+                    <div class="text">
+                      <div>
+                        <ion-icon
+                          name="information-circle-outline"
+                          class="error"
+                        ></ion-icon>
+                        <ion-icon
+                          name="checkmark-circle-outline"
+                          class="true"
+                        ></ion-icon>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="password">
+                  <label>password</label>
+                  <div class="divPass">
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      name="pass"
+                    />
+                    <div class="icons">
+                      <ion-icon
+                        name="eye-off-outline"
+                        class="eyeOff"
+                      ></ion-icon>
+                    </div>
+                    <div class="text">
+                      <div>
+                        <ion-icon
+                          name="information-circle-outline"
+                          class="error"
+                        ></ion-icon>
+                        <ion-icon
+                          name="checkmark-circle-outline"
+                          class="true"
+                        ></ion-icon>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-text">
+                  <p>
+                    You do not have an account?
+                    <a href="signUp.html" class="login">Sign up</a>
+                  </p>
+                  <span>You forgot your password</span>
+                </div>
+
+                <div class="btn-form">
+                  <input type="submit" value="Log in" class="submit" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="validation/script-sign-in.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

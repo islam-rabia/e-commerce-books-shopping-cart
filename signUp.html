@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sign.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      .main-two {
+        margin-block: 80px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>E-Book</h1>
+          <ion-icon name="book-outline"></ion-icon>
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <div class="person">
+          <a href="signIn.html" class="signIn">
+            <button class="icon-person">
+              <ion-icon name="person-outline"></ion-icon>
+              <p>Sign In</p>
+            </button>
+          </a>
+
+          <a href="signUp.html" class="signUp">
+            <button class="icon-person">
+              <ion-icon name="person-outline"></ion-icon>
+              <p>Sign Up</p>
+            </button>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-two">
+      <div class="login-div">
+        <div class="container">
+          <div class="formsInt">
+            <form action="" class="formTwo">
+              <div class="sign">
+                <h1>Sign Up</h1>
+
+                <div class="User">
+                  <div class="first">
+                    <label>User Name</label>
+                    <div class="clon1">
+                      <input
+                        type="text"
+                        placeholder="Write first name"
+                        name="firstName"
+                      />
+                      <div class="text">
+                        <div>
+                          <ion-icon
+                            name="information-circle-outline"
+                            class="error"
+                          ></ion-icon>
+                          <ion-icon
+                            name="checkmark-circle-outline"
+                            class="true"
+                          ></ion-icon>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="last">
+                    <label>Last User</label>
+                    <div class="clon1">
+                      <input
+                        type="text"
+                        placeholder="Write last name"
+                        name="lastName"
+                      />
+                      <div class="text">
+                        <div>
+                          <ion-icon
+                            name="information-circle-outline"
+                            class="error"
+                          ></ion-icon>
+                          <ion-icon
+                            name="checkmark-circle-outline"
+                            class="true"
+                          ></ion-icon>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="Insert">
+                  <div class="Email">
+                    <label>Email</label>
+                    <div class="clon1">
+                      <input
+                        type="email"
+                        placeholder="Write your email"
+                        name="email"
+                      />
+
+                      <div class="text">
+                        <div>
+                          <ion-icon
+                            name="information-circle-outline"
+                            class="error"
+                          ></ion-icon>
+                          <ion-icon
+                            name="checkmark-circle-outline"
+                            class="true"
+                          ></ion-icon>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="password">
+                  <label>password</label>
+                  <div class="divPass">
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      name="password"
+                    />
+                    <div class="icons">
+                      <ion-icon
+                        name="eye-off-outline"
+                        class="eyeOff"
+                      ></ion-icon>
+                    </div>
+                    <div class="text">
+                      <div>
+                        <ion-icon
+                          name="information-circle-outline"
+                          class="error"
+                        ></ion-icon>
+                        <ion-icon
+                          name="checkmark-circle-outline"
+                          class="true"
+                        ></ion-icon>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="Crossword">
+                  <label>Confirm password</label>
+                  <div class="divPass">
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      name="Crossword"
+                    />
+                    <div class="icons">
+                      <ion-icon
+                        name="eye-off-outline"
+                        class="eyeOff"
+                      ></ion-icon>
+                    </div>
+                    <div class="text">
+                      <div>
+                        <ion-icon
+                          name="information-circle-outline"
+                          class="error"
+                        ></ion-icon>
+                        <ion-icon
+                          name="checkmark-circle-outline"
+                          class="true"
+                        ></ion-icon>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-text">
+                  <p>
+                    You do not have an account?
+                    <a href="signIn.html">Sign In</a>
+                  </p>
+                </div>
+
+                <div class="btn-form">
+                  <input type="submit" value="Sign Up" class="sub" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="code/script-sign.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

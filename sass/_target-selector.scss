@@ -1,0 +1,20 @@
+%button {
+  border: hidden;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .2s ease;
+  cursor: pointer;
+}
+
+%div-header {
+  background-color: var(--main-one);
+  backdrop-filter: blur(2px);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  transition-duration: .3s;
+}

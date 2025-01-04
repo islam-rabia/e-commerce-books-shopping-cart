@@ -1,0 +1,79 @@
+@use "./target-selector" as *;
+
+.main-one {
+  @extend %div-header;
+  height: 100vh;
+  z-index: 89;
+
+  &.active {
+    transform: translateY(0%);
+  }
+
+  .search-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    transform: translateY(-100%);
+    transition-duration: 0.4s;
+
+    &.active {
+      transform: translateY(0%);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .btn-close {
+        color: var(--main-icon);
+        font-size: 21px;
+        width: 20px;
+        margin-inline: auto;
+        height: unset;
+        @extend %button;
+
+        &:hover {
+          color: #f44336b8;
+        }
+
+        :active {
+          transform: scale(0.89);
+        }
+      }
+
+      .input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        input {
+          border: 1px solid var(--main-border);
+          background-color: var(--search-color);
+          width: 283px;
+          height: 37px;
+          padding-left: 24px;
+          font-size: 11px;
+          font-family: sans-serif;
+          border-radius: 10px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            color: var(--main-color);
+          }
+        }
+
+        ion-icon {
+          position: absolute;
+          left: 7px;
+          font-size: 13px;
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+}

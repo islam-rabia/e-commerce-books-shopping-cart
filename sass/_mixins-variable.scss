@@ -1,0 +1,30 @@
+$variaOne: 80px;
+$variaTwo: 100px;
+$variaFour: 30px;
+$variaFive: 35px;
+$variaSex: 40px;
+$variaSeven: 60px;
+
+@mixin productOne {
+  padding-inline: $variaOne;
+}
+
+@mixin productTwo {
+  padding-inline: $variaTwo;
+}
+
+@mixin productFour {
+  padding-inline: $variaFour;
+}
+
+@mixin productFive {
+  padding-inline: $variaFive;
+}
+
+@mixin productSex {
+  padding-inline: $variaSex;
+}
+
+@mixin productSeven {
+  padding-inline: $variaSeven;
+}

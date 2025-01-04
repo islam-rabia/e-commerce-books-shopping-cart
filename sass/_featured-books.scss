@@ -1,0 +1,418 @@
+@use "./mixin-media" as *;
+@use "./mixins-variable" as *;
+
+#featured-books {
+  margin-block: 100px;
+  padding-inline: 20px;
+  display: flex;
+
+  flex-direction: column;
+
+  .head-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 23px;
+      font-weight: 200;
+      color: var(--color-h1);
+    }
+  }
+
+  .featured-books-list {
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+
+    li {
+      background-color: var(--li-background);
+      border: 1px solid var(--li-border);
+      border-radius: 10px;
+      max-width: 300px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        .icon-div {
+          transform: translateX(0%);
+        }
+      }
+
+      .featured-book {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 20px;
+        padding-inline: 51px;
+        gap: 9px;
+
+        .figure-img {
+          max-width: 158px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .feature-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+
+          h3 {
+            font-size: 17px;
+            font-family: system-ui;
+            font-weight: 400;
+            color: var(--color-h1);
+            text-align: center;
+          }
+
+          p {
+            font-size: 14px;
+            color: var(--color-p);
+            display: flex;
+            gap: 10px;
+            font-family: system-ui;
+          }
+        }
+
+        .feature-btn {
+          border: hidden;
+          background-color: transparent;
+          background-color: #4960d4;
+          color: white;
+          width: 138px;
+          height: 37px;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+          margin-top: 7px;
+
+          &:active {
+            transform: scale(0.95);
+            background-color: #4f66dc;
+          }
+        }
+      }
+
+      .icon-div {
+        position: absolute;
+        top: 22px;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        transition-duration: 0.4s;
+        transform: translateX(200%);
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        ion-icon {
+          color: #4960d4;
+          font-size: 17px;
+          cursor: pointer;
+
+          &:hover {
+            color: #4963e6;
+          }
+        }
+      }
+    }
+  }
+}
+
+#show-product {
+  position: fixed;
+  background: #00000094;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 66;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  .show-product {
+    .show-product-list {
+      padding-inline: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+
+      li {
+        background-color: var(--show-product);
+        border: 1px solid var(--li-border);
+        gap: 10px;
+        padding-block: 20px;
+        padding-inline: 20px;
+        border-radius: 10px;
+        z-index: 1;
+
+        .product-container {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          figure {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+              max-width: 180px;
+            }
+          }
+
+          .title-product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            h3 {
+              font-size: 17px;
+              font-family: system-ui;
+              font-weight: 400;
+              color: var(--color-h1);
+              text-align: center;
+            }
+
+            p {
+              font-size: 14px;
+              font-family: system-ui;
+              color: var(--para-show);
+              text-align: center;
+              line-height: 22px;
+              display: flex;
+              gap: 10px;
+            }
+          }
+        }
+
+        .feature-btn {
+          border: hidden;
+          background-color: transparent;
+          background-color: #4960d4;
+          color: white;
+          width: 138px;
+          height: 37px;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+          margin-top: 10px;
+          margin-inline: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:active {
+            transform: scale(0.95);
+            background-color: #4f66dc;
+          }
+        }
+      }
+    }
+  }
+
+  .div {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    cursor: pointer;
+  }
+}
+
+@include parent(medium) {
+  body {
+    #featured-books {
+      @include productFour();
+    }
+
+    #show-product {
+      .show-product {
+        display: flex;
+        justify-content: center;
+
+        .show-product-list {
+          padding-inline: 30px;
+          max-width: 375px;
+        }
+      }
+    }
+  }
+}
+
+@include parent(XMedium) {
+  body {
+    #featured-books {
+      @include productFive();
+    }
+  }
+}
+
+@include parent(mobile) {
+  body {
+    #featured-books {
+      @include productSex();
+      justify-content: center;
+      align-items: center;
+
+      .featured-books-list {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 640px;
+        width: 100%;
+
+        li {
+          max-width: unset;
+
+          .featured-book {
+            padding-inline: 20px;
+          }
+        }
+      }
+    }
+
+    #show-product {
+      .show-product {
+        .show-product-list {
+          max-width: unset;
+
+          li {
+            max-width: 580px;
+            position: relative;
+
+            .product-container {
+              flex-direction: row;
+              // align-items: center;
+              gap: 20px;
+
+              .title-product {
+                align-items: start;
+                margin-top: 15px;
+
+                p {
+                  text-align: start;
+                }
+              }
+            }
+
+            .feature-btn {
+              position: absolute;
+              bottom: 50px;
+              left: 38%;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.message {
+  position: fixed;
+  top: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 67;
+
+  li {
+    background-color: white;
+    padding-block: 10px;
+    padding-inline: 12px;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    ion-icon {
+      font-size: 20px;
+      background-color: #3eff3e;
+      color: white;
+      border-radius: 50%;
+    }
+
+    p {
+      font-size: 13px;
+      font-family: system-ui;
+      font-weight: 400;
+    }
+  }
+}
+
+@include parent(tablet) {
+  body {
+    #featured-books {
+      @include productSeven();
+    }
+
+    #show-product {
+      .show-product {
+        .show-product-list {
+          li {
+            max-width: 627px;
+
+            .feature-btn {
+              left: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include parent(lap) {
+  body {
+    #featured-books {
+      @include productOne();
+
+      .featured-books-list {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: unset;
+      }
+    }
+  }
+}
+
+@include parent(laptop) {
+  body {
+    #featured-books {
+      @include productTwo();
+
+      .featured-books-list {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: unset;
+      }
+    }
+  }
+}
+
+@include parent(large) {
+  body {
+    #featured-books {
+      padding-inline: 150px;
+      max-width: 1400px;
+      margin-inline: auto;
+    }
+  }
+}

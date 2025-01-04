@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Book</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="index.html">
+          <div class="logo">
+            <h1>E-Book</h1>
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+        </a>
+
+        <div class="list-navbar">
+          <button class="btn-open">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="navbar-div"></div>
+        <nav class="navbar">
+          <button class="btn-close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <a href="index.html">
+            <div class="logo">
+              <h1>E-Book</h1>
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+          </a>
+
+          <ul class="navbar-list">
+            <li><a href="#article" class="activeBtn">Home</a></li>
+            <li><a href="#featured-books">Feature</a></li>
+            <li><a href="#section-discount">Discount</a></li>
+            <li><a href="#section-one">NewBooks</a></li>
+            <li><a href="#customer">Testimonial</a></li>
+          </ul>
+
+          <div class="icons">
+            <div class="icons-navbar">
+              <div class="search">
+                <button class="icon-search">
+                  <ion-icon name="search-outline"></ion-icon>
+                </button>
+              </div>
+
+              <div class="mode">
+                <button class="icon-btn">
+                  <ion-icon name="sunny-outline"></ion-icon>
+                </button>
+              </div>
+
+              <div class="out-div">
+                <button class="icon-out">
+                  <ion-icon name="log-out-outline"></ion-icon>
+                </button>
+              </div>
+
+              <div class="love-div">
+                <a href="./loved-product.html">
+                  <button class="icon-love">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <div class="live"></div>
+                  </button>
+                </a>
+              </div>
+
+              <div class="cart-div">
+                <a href="./shopping-cart.html">
+                  <button class="icon-cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+                </a>
+                <div class="counter">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="account">
+              <ion-icon name="person-outline"></ion-icon>
+              <h3></h3>
+            </div>
+          </div>
+
+          <div class="person">
+            <a href="signIn.html" class="signIn">
+              <button class="icon-person">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>Sign In</p>
+              </button>
+            </a>
+
+            <a href="signUp.html" class="signUp">
+              <button class="icon-person">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>Sign Up</p>
+              </button>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-one">
+      <div class="search-div">
+        <div class="container">
+          <button class="btn-close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="input">
+            <input type="search" placeholder="What are you looking for ?" />
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <article id="article">
+      <div class="section-one">
+        <div class="section-title">
+          <h1>Browse & Select E-Books</h1>
+          <p>
+            Find the best e-books from your favorite writers, explore hundreds
+            of books with all possible categories, take advantage of the 50%
+            discount and much more
+          </p>
+
+          <button>Explore Now</button>
+        </div>
+
+        <div class="home-images">
+          <div class="home-swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="home-article swiper-slide">
+                <img
+                  src="img/home-book-1.png"
+                  alt="not found"
+                  class="home-img"
+                />
+              </article>
+
+              <article class="home-article swiper-slide">
+                <img
+                  src="img/home-book-2.png"
+                  alt="not found"
+                  class="home-img"
+                />
+              </article>
+
+              <article class="home-article swiper-slide">
+                <img
+                  src="img/home-book-3.png"
+                  alt="not found"
+                  class="home-img"
+                />
+              </article>
+
+              <article class="home-article swiper-slide">
+                <img
+                  src="img/home-book-4.png"
+                  alt="not found"
+                  class="home-img"
+                />
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <main id="featured-books">
+      <div class="head-book">
+        <h1>Featured Books</h1>
+      </div>
+      <ul class="featured-books-list"></ul>
+    </main>
+
+    <section id="section-discount">
+      <div class="discount-image">
+        <figure>
+          <img class="img-one" src="img/discount-book-1.png" alt="" />
+          <img class="img-two" src="img/discount-book-2.png" alt="" />
+        </figure>
+      </div>
+
+      <div class="discount-title">
+        <h3>Up To 50% Discount</h3>
+        <p>
+          Take advantage of the discount days we have for you, buy books from
+          your favorite writers, the more you buy, the more discounts we have
+          for you.
+        </p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+
+    <section id="section-one">
+      <div class="head-book">
+        <h1>New Books</h1>
+      </div>
+      <ul class="books-list"></ul>
+      <ul class="books-list-two"></ul>
+    </section>
+
+    <article id="subscribe">
+      <div class="subscribe-title">
+        <h1>
+          Subscribe To Receive <br />
+          The Latest Updates
+        </h1>
+      </div>
+      <div class="subscribe-input">
+        <input type="email" placeholder="Enter email" />
+        <button>Subscribe</button>
+      </div>
+    </article>
+
+    <article id="customer">
+      <div class="customer-title">
+        <h1>Customer Opinions</h1>
+      </div>
+      <ul class="customer-description-list"></ul>
+    </article>
+
+    <ul class="message"></ul>
+
+    <div class="button-top">
+      <button class="btn">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </button>
+    </div>
+
+    <main id="show-product">
+      <div class="show-product">
+        <ul class="show-product-list"></ul>
+      </div>
+      <div class="div"></div>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-title">
+          <h1>E-Book</h1>
+          <p>
+            Find and explore the best <br />
+            eBooks from all your <br />
+            favorite writers.
+          </p>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <h3>About</h3>
+            <span>Awards</span>
+            <span>FAQs</span>
+            <span>Privacy policy</span>
+            <span>Terms of services</span>
+          </li>
+          <li>
+            <h3>Company</h3>
+            <span>Blogs</span>
+            <span>Community</span>
+            <span>Our team</span>
+            <span>Help center</span>
+          </li>
+          <li>
+            <h3>Contact</h3>
+            <span
+              >Av. Hacienda <br />
+              Lima 4321, Perú
+            </span>
+            <span
+              >e.book@email.com <br />
+              0987-654-321</span
+            >
+          </li>
+          <li>
+            <h3>Social</h3>
+            <div class="icons">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&#169; All Rights Reserved By Bedimcode</p>
+      </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="./js/sectionOneImg.js"></script>
+    <script type="module" src="dist/index-websie.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

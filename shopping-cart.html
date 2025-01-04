@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/shooping.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="index.html">
+          <div class="logo">
+            <h1>E-Book</h1>
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+        </a>
+
+        <div class="list-navbar">
+          <button class="btn-open">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="navbar-div"></div>
+        <nav class="navbar">
+          <button class="btn-close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <a href="index.html">
+            <div class="logo">
+              <h1>E-Book</h1>
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+          </a>
+
+          <ul class="navbar-list">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">NewBooks</a></li>
+            <li><a href="#">Testimonial</a></li>
+          </ul>
+
+          <div class="icons">
+            <div class="icons-navbar">
+              <div class="mode">
+                <button class="icon-btn">
+                  <ion-icon name="sunny-outline"></ion-icon>
+                </button>
+              </div>
+
+              <div class="out-div">
+                <button class="icon-out">
+                  <ion-icon name="log-out-outline"></ion-icon>
+                </button>
+              </div>
+
+              <div class="love-div">
+                <a href="./loved-product.html">
+                  <button class="icon-love">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <div class="live"></div>
+                  </button>
+                </a>
+              </div>
+
+              <div class="cart-div">
+                <a href="./shopping-cart.html">
+                  <button class="icon-cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+                </a>
+                <div class="counter">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="account">
+              <ion-icon name="person-outline"></ion-icon>
+              <h3></h3>
+            </div>
+          </div>
+
+          <div class="person">
+            <a href="signIn.html" class="signIn">
+              <button class="icon-person">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>Sign In</p>
+              </button>
+            </a>
+
+            <a href="signUp.html" class="signUp">
+              <button class="icon-person">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>Sign Up</p>
+              </button>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="shopping-cart">
+      <h1>Welcome Shopping Cart🛵</h1>
+    </section>
+
+    <section id="section-cart">
+      <div class="title-cart">
+        <h3>My Cart <span></span></h3>
+      </div>
+
+      <div class="container">
+        <div class="product-cart">
+          <ul class="product-cart-list"></ul>
+        </div>
+
+        <div class="slide-order">
+          <div class="order-card">
+            <div class="title">
+              <h3>Order Summary</h3>
+            </div>
+
+            <ul class="total-list">
+              <li class="sub-total">
+                <p>SubTotal</p>
+                <div class="shipping-div">
+                  $
+                  <span>10</span>
+                </div>
+              </li>
+              <li class="shipping">
+                <p>Shipping and Handling</p>
+                <div class="shipping-div">
+                  $
+                  <span>10</span>
+                </div>
+              </li>
+              <li class="sales">
+                <p>Sales Tax</p>
+                <div class="shipping-div">
+                  $
+                  <span>15</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="total">
+              <h3>Total</h3>
+              <div class="shipping-div">
+                $
+                <span>0</span>
+              </div>
+            </div>
+
+            <div class="checkBox">
+              <h3>* Tax estimated at checkout</h3>
+
+              <div class="btn">
+                <button class="sign-in">Sign In & Checkout</button>
+                <button class="guest">Guest Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <ul class="message"></ul>
+
+    <div class="button-top">
+      <button class="btn">
+        <ion-icon name="caret-up-outline"></ion-icon>
+      </button>
+    </div>
+
+    <script type="module" src="cart/shopping-cart.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

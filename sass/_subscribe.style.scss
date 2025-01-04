@@ -1,0 +1,77 @@
+@use "./mixin-media" as *;
+
+#subscribe {
+  background-image: url(../img/join-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-block: 100px;
+
+  .subscribe-title {
+    padding-block: 20px;
+
+    h1 {
+      text-align: center;
+      font-size: 23px;
+      font-weight: 200;
+      color: white;
+    }
+  }
+
+  .subscribe-input {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    input {
+      width: 199px;
+      padding-block: 10px;
+      padding-inline: 10px;
+      background-color: aliceblue;
+      border: hidden;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      border: hidden;
+      background-color: transparent;
+      background-color: #4960d4;
+      color: white;
+      width: 199px;
+
+      height: 37px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+
+      &:active {
+        transform: scale(0.89);
+      }
+    }
+  }
+}
+
+@include parent(tablet) {
+  body {
+    #subscribe {
+      .subscribe-title {
+        padding-block: 30px;
+      }
+
+      .subscribe-input {
+        padding-bottom: 30px;
+
+        input,
+        button {
+          width: 251px;
+        }
+      }
+    }
+  }
+}
