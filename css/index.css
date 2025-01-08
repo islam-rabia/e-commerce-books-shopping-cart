@@ -1958,7 +1958,6 @@ body #section-cart .container .slide-order .order-card .checkBox .btn .sign-in {
     margin: unset !important;
   }
   body #section-cart .slide-order .order-card {
-    position: fixed;
     max-width: 263px !important;
     margin-inline: unset !important;
   }

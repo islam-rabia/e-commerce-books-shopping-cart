@@ -48,3 +48,17 @@ if (isActive.length > 0) {
 }
 
 addCounterLengthProduct();
+
+let para = document.querySelector("#featured-books p");
+
+// Check if wishListLoveData exists and is an array
+let wishListLoveData =
+  JSON.parse(localStorage.getItem("wishListLoveData")) || [];
+if (Array.isArray(wishListLoveData) && wishListLoveData.length <= 0) {
+  para.classList.remove("active");
+} else {
+  para.classList.add("active");
+}
+// para.classList.add("active");
+
+// console.log();

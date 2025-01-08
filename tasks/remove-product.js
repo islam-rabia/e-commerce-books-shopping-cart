@@ -17,6 +17,16 @@ function removeProduct(wishContainer, index) {
     liveIcon.classList.remove("active");
   }
 
+  // Check if wishListLoveData exists and is an array
+
+  let para = document.querySelector("#featured-books p");
+
+  if (wishContainer.length <= 0) {
+    para.classList.remove("active");
+  } else {
+    para.classList.add("active");
+  }
+
   addCounterLengthProduct();
   handleMessageError(index);
 }

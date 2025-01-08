@@ -31,6 +31,19 @@
 
 #featured-books {
   margin-block: 15px;
+
+  > p {
+    font-size: 18px;
+    color: #f44336;
+    font-family: system-ui;
+    height: 9vh;
+    align-items: center;
+    display: flex;
+
+    &.active {
+      display: none;
+    }
+  }
 }
 
 .remove-icon {
